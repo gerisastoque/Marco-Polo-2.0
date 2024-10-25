@@ -1,24 +1,79 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+	font-family: 'Arial', sans-serif;
+	background: linear-gradient(135deg, #72c6ef 0%, #004e92 100%);
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
 }
 
-nav {
-  background-color: #333;
-  padding: 1em;
+h1 {
+	font-size: 4rem;
+	text-align: center;
+}
+h2 {
+	font-size: 2rem;
+	text-align: center;
+}
+h3 {
+	font-size: 1rem;
+	text-align: center;
+	color: #ff6347;
 }
 
-nav a {
-  color: white;
-  margin-right: 1em;
-  text-decoration: none;
+p {
+	font-size: 1rem;
+	text-align: center;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
 }
 
-nav a:hover {
-  text-decoration: underline;
+div {
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.7);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	animation: slideIn 1s ease-in-out;
+	margin-bottom: 2rem;
 }
 
-#app {
-  padding: 2em;
+table {
+	font-size: 1.5rem;
+	align-items: center;
+}
+
+td,
+th {
+	padding: 0.5rem 0.7rem 0; /* Espacio interno de cada celda */
+	border: none;
+}
+
+section {
+	display: flex; /* Activa Flexbox */
+	flex-direction: column; /* Organiza los elementos en columna */
+	align-items: center; /* Centra horizontalmente los elementos */
+	justify-content: center; /* Centra verticalmente los elementos */
+	padding-top: 2rem;
+}
+
+button {
+	padding: 0.7rem 1.5rem;
+	margin: 0.5rem 0;
+	border: none;
+	border-radius: 5px;
+	font-size: 1rem;
+	background-color: #ff6347;
+	color: white;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
 }

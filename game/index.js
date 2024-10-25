@@ -94,7 +94,7 @@ async function restartGame() {
 // ------------- SOCKET LISTENERS ----------------
 
 socket.on("userJoined", (data) => {
-  usersCount.innerHTML = data?.players.length || 0
+  usersCount.innerHTML = data?.length || 0
   console.log(data)
 })
 
@@ -134,6 +134,10 @@ socket.on("notification", (data) => {
     shoutDisplay.innerHTML = `Marco ha gritado: ${data.message}`
     shoutDisplay.style.display = "block"
   }
+})
+
+socket.on("updateScore", (data) => {
+  console.log("updateScore", data)
 })
 
 socket.on("notifyGameOver", (data) => {

@@ -1,9 +1,8 @@
-import renderScreen1 from "./screens/screen1.js";
-import renderScreen2 from "./screens/screen2.js";
+import renderScreen1 from "./screens/playersList.js";
+import renderScreen2 from "./screens/results.js";
 import socket from "./socket.js";
 
 const router = new Router({
-  // check this for more features with Router: https://github.com/Graidenix/vanilla-router
   mode: "hash",
   page404: (path) => {
     const app = document.getElementById("app");
@@ -34,6 +33,7 @@ window.addEventListener("popstate", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   router.check();
+  console.log("DOMContentLoaded event");
 });
 
 router.check();
